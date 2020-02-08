@@ -7,4 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> header</h1>
+    <h1>ERROR 404</h1>
+    <a href="/">Go to home</a>
+</body>
+</html>
