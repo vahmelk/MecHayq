@@ -50,8 +50,8 @@
   </nav>
   <section class='row section'>
     <div class='col s5'>
-      <div col s5>
-        <h1 class='gameicon 'id="math" onclick="math">MATH</h3>
+    <h1 class='gameicon 'id="math" onclick="math">MATH</h3>
+      <div class="lala">
           <div class='icons mth topicon'>
         </div>
       </div>
