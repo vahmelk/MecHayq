@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
+	var elems = document.querySelectorAll('.sidenav');
+	var instances = M.Sidenav.init(elems, options);
 });
 
 // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
@@ -10,21 +10,21 @@ document.addEventListener('DOMContentLoaded', function () {
 // Or with jQuery
 
 $(document).ready(function () {
-    $('.sidenav').sidenav();
+	$('.sidenav').sidenav();
 });
 let windowwith = $(window).width();
 if (windowwith < 992) {
 	document.getElementById('hide').style.display = "inline-block";
 }
-function math(){
+function math() {
 	window.location.href + "view/content/math.php"
 }
-function logic(){
+function logic() {
 	window.location.href + "view/content/logic.php"
 }
-function memory(){
+function memory() {
 	window.location.href + "view/content/memory.php"
 }
-function attent(){
+function attent() {
 	window.location.href + "view/content/attention.php"
 }

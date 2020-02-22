@@ -50,8 +50,8 @@
   </nav>
   <section class='row section'>
     <div class='col s5'>
-    <h1 class='gameicon 'id="math" onclick="math">MATH</h3>
       <div class="lala">
+      <h1 class='gameicon 'id="math" onclick="math">MATH</h3>
           <div class='icons mth topicon'>
         </div>
       </div>
@@ -90,7 +90,6 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            :copyright: 2014 Copyright Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
