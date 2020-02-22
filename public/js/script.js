@@ -12,3 +12,19 @@ document.addEventListener('DOMContentLoaded', function () {
 $(document).ready(function () {
     $('.sidenav').sidenav();
 });
+let windowwith = $(window).width();
+if (windowwith < 992) {
+	document.getElementById('hide').style.display = "inline-block";
+}
+function math(){
+	window.location.href + "view/content/math.php"
+}
+function logic(){
+	window.location.href + "view/content/logic.php"
+}
+function memory(){
+	window.location.href + "view/content/memory.php"
+}
+function attent(){
+	window.location.href + "view/content/attention.php"
+}

@@ -7,33 +7,98 @@ body{
 }
 nav{
    width: 100%;
+   display: flex !important ;
+
 }
 footer{
-    width: 100%;
+    /* width: 100%;
     position: fixed;
-    margin-bottom: 0;
+    bottom: 0; */
+    display: block;
+}
+#hide{
+  display: none;
+  color: #ee6e73;
 }
 .background{
    background-image: url('../images/logoPT.png');
    background-size: cover;
    background-repeat: no-repeat;
-   width:50px;
+   margin: 0 auto;
+   width:62px;
    display: block;
-   height:50px;
+   height:60px;
 }
 .logotp{
    background-image: url('../images/logoPT.png');
    background-size: cover;
    background-repeat: no-repeat;
-   width:60px;
+   width:53px;
    display: inline-block;
-   height:60px;
+   height:50px;
+   margin-top: 2px;
+}
+.mth{
+   background-image: url("../images/download\ \(1\).jfif");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover; 
+   filter: blur(5px);
+}
+.mth:hover{
+   filter: blur(0px);
+}
+#math{
+   filter: blur(0px);
+}
+.mem{
+   background-image: url("../images/download.jfif");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover; 
+}
+#math{
+   display: flex;
+   color: #cc231e;
 }
 
+#memor{
+   display: flex;
+   color:#235e6f;
+}
+.logic{
+   background-image: url("../images/logicimg.jfif");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover; 
+}
+#logic{
+   display: flex;
+   color:#353341;
+}
+
+.att{
+   background-image: url("../images/attent.jfif");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover; 
+}
+#attent{
+   display: flex;
+   color: 	#34532a;
+}
 .icons{
+   /* display: flex;
    width: auto;
    font-size: 5px;
    height: 100%;
+   border: 2px solid grey;
+   border-radius: 20px;
+   padding: 5px;
+   margin: 0 auto; */
+   
+   font-size: 5px;
+   height: 171px;
    border: 2px solid grey;
    border-radius: 20px;
    margin-bottom: 15px;
@@ -42,14 +107,19 @@ footer{
 .botticon{
    margin-top: 10px;
    padding-top: 6%;
-   padding-left: 4%;
 }
 .topicon{
    padding-top: 5%;
-   padding-left: 7%;
 }
 .gameicon{
-   font-size: 25px;
+   font-size: 33px;
+   /* text-align: center; */
+   justify-content: center;
+   display: flex;
+}
+.section{
+   display: flex;
+   justify-content: space-around;
 }
     /* header, main, footer {
       padding-left: 300px;
@@ -68,6 +138,7 @@ footer{
     }
     .pages{
        color: black;
+       margin-left: 15%;
     }
     .pages:hover{
        background-color: darkgray;
@@ -85,8 +156,25 @@ footer{
        display: inline-block;
     } 
       @media only screen and (max-width : 992px) {
-      .pagesbig{
+      .pagesbig {
         padding-left: 0;
         display: none;
       }
+      .logotpdiv{
+         display: inline-block;
+         width: 90%;
+      }
     }
+      @media only screen and (min-height: 710px) {
+        footer{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+        }
+      }
+      nav{
+        display: flex;justify-content: space-between;
+      }
+      .mth{
+         background-color:rgba(0,0,0,0.5);
+      }

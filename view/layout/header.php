@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/style.css?v=<?=rand()?>">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     
 <!-- jQuery library -->
@@ -13,7 +13,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css?v=<?=rand()?>"  media="screen,projection"/>
     <link rel="stylesheet" href="../../public/css/materialize.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,8 @@
 </head>
 <body>
   <nav>
-    <div class='logotp'></div> 
+      <a href="#" data-target="slide-out" class="sidenav-trigger menupt"><i class="material-icons"><img id='menuimg' src="../../public/images/menu.png" alt="">
+  </i></a> 
          <div id="bigpgdiv">
       <li class="pagesbig pgbighome">Home</li>
       <li class="pagesbig">Registration</li>
@@ -41,26 +42,29 @@
       <li class="pages">About</li>
     </div>
   </ul>
-  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons"><img id='menuimg' src="../../public/images/menu.png" alt="">
-  </i></a>  
+      <div class='logotp'></div> 
+      <div id="hide">
+        hahaha
+      </div>
  
   </nav>
   <section class='row section'>
     <div class='col s5'>
-      <div class='icons topicon'>
-        <h3 class='gameicon'>MATH</h3>
+      <div col s5>
+        <h1 class='gameicon 'id="math" onclick="math">MATH</h3>
+          <div class='icons mth topicon'>
+        </div>
       </div>
-      <div class='icons botticon'>
-        <h3 class='gameicon'>MEMOR</h3>
+      <div class='icons mem botticon'>
+        <h1 class='gameicon'id="memor" onclick="memory">MEMORY</h3>
       </div>
     </div>
-    <div class='col s2'></div>
     <div class='col s5'>
-      <div class='icons topicon'>
-        <h3 class='gameicon'>LOGIC</h3>
+      <div class='icons logic topicon'>
+        <h1 class='gameicon'id="logic" onclick="logic">LOGIC</h3>
       </div>
-      <div class='icons botticon'>
-        <h3 class='gameicon'>ATTENT</h3>
+      <div class='icons att botticon'>
+        <h1 class='gameicon'id="attent" onclick="attent">ATTENT</h3>
       </div>
     </div>
     
@@ -91,7 +95,7 @@
             </div>
           </div>
         </footer>
-  <script src="../../public/js/script.js"></script>
-  <script type="text/javascript" src="../../public/js/materialize.min.js"></script>
+  <script src="../../public/js/script.js?v=<?=rand()?>"></script>
+  <script type="text/javascript" src="../../public/js/materialize.min.js?v=<?=rand()?>"></script>
 </body>
 </html>
