@@ -17,6 +17,7 @@ footer{
     display: block;
 }
 #hide{
+   width: 60px;
   display: none;
   color: #ee6e73;
 }
@@ -105,7 +106,7 @@ footer{
    margin: 0 auto;
 }
 .botticon{
-   margin-top: 10px;
+   /* margin-top: 10px; */
    padding-top: 6%;
 }
 .topicon{
@@ -177,6 +178,7 @@ footer{
       }
       .mth , .logic , .mem , .att{
          transition: 0.5s ease;
+         filter: blur(0.4);
       }
       .mthdiv , .memdiv , .logdiv, .attdiv {
          position: relative;

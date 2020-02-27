@@ -44,7 +44,6 @@
   </ul>
       <div class='logotp'></div> 
       <div id="hide">
-        hahaha
       </div>
  
   </nav>
