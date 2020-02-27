@@ -10,6 +10,13 @@ nav{
    display: flex !important ;
 
 }
+nav .sidenav-trigger {
+    float: left;
+    position: absolute !important;
+    z-index: 1;
+    height: 56px;
+    margin: 0 18px;
+}
 footer{
     display: block;
 }
@@ -132,6 +139,11 @@ footer{
        display: inline-block;
     } 
       @media only screen and (max-width : 992px) {
+         .logotp{
+         margin-top: 2px !important;
+         margin: 0 auto;
+         display: block;
+      }
          .gameicon{
             font-size: 25px;
          }
@@ -151,10 +163,7 @@ footer{
           width: 100%;
         }
       }
-      nav{
-        display: flex;
-        justify-content: space-between;
-      }
+      
       .mth , .logic , .mem , .att{
          transition: 0.5s ease;
          filter: blur(0.4);
