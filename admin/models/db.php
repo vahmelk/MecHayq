@@ -3,32 +3,33 @@
 
 		class database
 		{
-			protected $connection;
-			
-			protected function connect($host="localhost", $user="root", $pass="", $dbname="mvc" )
+			private $connection;
+			protected function connect($host="localhost", $user="root", $pass="", $dbname="mechayq" )
 			{
-				$connection = mysqli_connect($host, $user, $pass,$dbname) or die("Service temporary unavailable.");
+				$this->connection = mysqli_connect($host, $user, $pass,$dbname) or die("Service temporary unavailable.");
 				//$db_selected = mysqli_select_db($dbname, $connection) or die("Service temporary unavailable.");
-				mysqli_set_charset($connection,"utf8");
+				mysqli_set_charset($this->connection,"utf8");
 				date_default_timezone_set("A sia/Yerevan");
-				
-				return $connection;
 			}
-			
-			protected function query( $query)
+			public function query($query)
 			{
 				$conn = $this-> connect();
-				$res = mysqli_query($conn, $query);
-				$data = "";
+				$res = mysqli_query($this->connection, $query);
+				// var_dump($res);
 				while($row = mysqli_fetch_assoc($res))
-					$data[] =  $row;
-				return $data;
+					$Data[] =  $row;
+				$this->close();
+				return $Data;
 			}
-			
 			protected function query_($query)
 			{
-				$conn = $this-> connect();
-				mysqli_query($conn,$query);
+				$this-> connect();
+				$res=mysqli_query($this->connection,$query);
+				$this->close();
+			}
+
+			protected function close(){
+				mysqli_close($this->connection);
 			}
 
 			public function conn(){
@@ -36,5 +37,7 @@
 			}
 			
 		}
+
+
 
 ?>
