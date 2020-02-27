@@ -11,9 +11,6 @@ nav{
 
 }
 footer{
-    /* width: 100%;
-    position: fixed;
-    bottom: 0; */
     display: block;
 }
 #hide{
@@ -46,24 +43,20 @@ footer{
    background-size: cover; 
    filter: blur(2px);
 }
-/* .mth:hover{
-   filter: blur(0px);
-} */
 #math{
    filter: blur(0px);
+   display: flex;
+   color: #cc231e;
 }
 .mem{
    background-image: url("../images/download.jfif");
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover; 
+   filter: blur(2px);
 }
-#math{
-   display: flex;
-   color: #cc231e;
-}
-
 #memor{
+   filter: blur(0px);
    display: flex;
    color:#235e6f;
 }
@@ -72,9 +65,11 @@ footer{
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover; 
+   filter: blur(2px);
 }
 #logic{
    display: flex;
+   filter: blur(0px);
    color:#353341;
 }
 
@@ -83,30 +78,21 @@ footer{
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover; 
+   filter: blur(2px);
 }
 #attent{
+   filter: blur(0px);
    display: flex;
    color:  #34532a;
 }
 .icons{
-   /* display: flex;
-   width: auto;
-   font-size: 5px;
-   height: 100%;
-   border: 2px solid grey;
-   border-radius: 20px;
-   padding: 5px;
-   margin: 0 auto; */
-   
    font-size: 5px;
    height: 169px;
-   /* border: 2px solid grey; */
    border-radius: 15px;
    margin-bottom: 15px;
    margin: 0 auto;
 }
 .botticon{
-   /* margin-top: 10px; */
    padding-top: 6%;
 }
 .topicon{
@@ -114,7 +100,6 @@ footer{
 }
 .gameicon{
    font-size: 33px;
-   /* text-align: center; */
    justify-content: center;
    display: flex;
 }
@@ -122,16 +107,6 @@ footer{
    display: flex;
    justify-content: space-around;
 }
-    /* header, main, footer {
-      padding-left: 300px;
-    }
-
-    @media only screen and (min-width : 992px) {
-      header, main, footer {
-        padding-left: 0;
-        display: none;
-      }
-    } */
     #bigpgdiv{
        width:95%;
        position: absolute;
@@ -157,6 +132,9 @@ footer{
        display: inline-block;
     } 
       @media only screen and (max-width : 992px) {
+         .gameicon{
+            font-size: 25px;
+         }
       .pagesbig {
         padding-left: 0;
         display: none;
@@ -174,7 +152,8 @@ footer{
         }
       }
       nav{
-        display: flex;justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
       }
       .mth , .logic , .mem , .att{
          transition: 0.5s ease;
@@ -190,25 +169,7 @@ footer{
          overflow: hidden;
          cursor: pointer;
      }
-     
-   #math {
-      height: 100%;
-      z-index: 1;
-      display: flex;
-      color: #cc231e;
-      position: absolute;
-      width: 100%;
-      margin: 0 auto;
-      padding-top: 65px;
-      background-color: rgba(0,0,0,.4);
-      border-radius: 15px;
-  }
-  .mthdiv:hover .mth{
-   filter: blur(0px);
-   transform: scale(1.4);
-   cursor: pointer;
-}
-#logic {
+  #attent ,#memor ,  #logic , #math{
       height: 100%;
       z-index: 1;
       display: flex;
@@ -219,39 +180,8 @@ footer{
       background-color: rgba(0,0,0,.3);
       border-radius: 15px;
   }
-   .logdiv:hover .logic{
-   filter: blur(0px);
-   transform: scale(1.4);
-}
 
-  #attent {
-      height: 100%;
-      z-index: 1;
-      display: flex;
-      position: absolute;
-      width: 100%;
-      margin: 0 auto;
-      padding-top: 65px;
-      background-color: rgba(0,0,0,.2);
-      border-radius: 15px;
-  }
-  #memor {
-      height: 100%;
-      z-index: 1;
-      display: flex;
-      position: absolute;
-      width: 100%;
-      margin: 0 auto;
-      padding-top: 65px;
-      background-color: rgba(0,0,0,.2);
-      border-radius: 15px;
-  }
-  .memdiv:hover .mem{
+.attdiv:hover .att , .memdiv:hover .mem , .logdiv:hover .logic , .mthdiv:hover .mth{
    filter: blur(0px);
-   transform: scale(1.4);
-}
-
-.attdiv:hover .att{
-   filter: blur(0px);
-   transform: scale(1.4);
+   transform: scale(1.2);
 }

@@ -68,7 +68,7 @@
           </div>
       </div>
       <div class='attdiv'>
-          <h1 class='gameicon'id="attent" onclick="attent">ATTENT</h3>
+          <h1 class='gameicon'id="attent" onclick="attent">ATTENTION</h3>
           <div class='icons att botticon'>
           
       </div>
