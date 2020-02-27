@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../public/css/style.css?v=<?=rand()?>">
+    <link rel="stylesheet" href="./public/css/style.css?v=<?=rand()?>">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     
 <!-- jQuery library -->

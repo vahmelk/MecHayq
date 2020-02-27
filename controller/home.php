@@ -3,7 +3,7 @@
 class home extends model {
     
     function __construct(){	
-      echo isset($_COOKIE["u_id"]);
+     
       if(!isset($_COOKIE["u_id"])){
         header("LOCATION: ".$ROOT."login");
       }
