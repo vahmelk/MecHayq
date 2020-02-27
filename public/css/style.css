@@ -175,19 +175,21 @@ footer{
       nav{
         display: flex;justify-content: space-between;
       }
-      .mth{
-      transition: 0.5s ease;
-         background-color:rgba(0,0,0,0.5);
+      .mth , .logic , .mem , .att{
+         transition: 0.5s ease;
       }
-      .lala {
+      .mthdiv , .memdiv , .logdiv, .attdiv {
          position: relative;
          width: 100%;
+         margin-top: 10px;
          height: 171px;
          border: 2px solid #000000;
          border-radius: 15px;
          overflow: hidden;
+         cursor: pointer;
      }
-     #math {
+     
+   #math {
       height: 100%;
       z-index: 1;
       display: flex;
@@ -196,10 +198,58 @@ footer{
       width: 100%;
       margin: 0 auto;
       padding-top: 65px;
-      background-color: rgba(0,0,0,0.1);
+      background-color: rgba(0,0,0,.4);
       border-radius: 15px;
   }
-  .lala:hover .mth{
+  .mthdiv:hover .mth{
    filter: blur(0px);
-   transform: scale(1.2);
+   transform: scale(1.4);
+   cursor: pointer;
+}
+#logic {
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 65px;
+      background-color: rgba(0,0,0,.3);
+      border-radius: 15px;
+  }
+   .logdiv:hover .logic{
+   filter: blur(0px);
+   transform: scale(1.4);
+}
+
+  #attent {
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 65px;
+      background-color: rgba(0,0,0,.2);
+      border-radius: 15px;
+  }
+  #memor {
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 65px;
+      background-color: rgba(0,0,0,.2);
+      border-radius: 15px;
+  }
+  .memdiv:hover .mem{
+   filter: blur(0px);
+   transform: scale(1.4);
+}
+
+.attdiv:hover .att{
+   filter: blur(0px);
+   transform: scale(1.4);
 }
