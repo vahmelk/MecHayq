@@ -1,6 +1,6 @@
 <?php
 	
-	include_once('admin/models/db.php');
+	require_once('admin/models/db.php');
 	
 	/*
 	* 
@@ -13,6 +13,7 @@
 			// var_dump($x);
 			
 		}
+		
 		public function setUser($data){
 			$db="INSERT INTO mechayq_dp (u_id, Name, Age, Username,Email,Password,gender) VALUES('$data[u_id]','$data[Name]','$data[Age]', '$data[Username]','$data[Email]','$data[Password]', '$data[gender]')";
 			;
@@ -26,7 +27,16 @@
 				echo "it's false";
 				return false; 
 			}
+			
 		}
+		public function cookie(){
+				   $sql="SELECT * FROM mechayq_dp WHERE u_id=$_COOKIE[u_id]";	
+				   if (mysqli_query($sql)) {
+					   header("LOCATION: ".$ROOT."login");
+				   }else {
+					   echo "please register to our Website";
+				   }
+			}
 		public function validation($data){
 			$passValid="#.*^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$#";
         	$userValid="/^[a-z0-9_.-]{4,20}$/";
@@ -35,7 +45,8 @@
 			
 			$result=(preg_match( $emailValid, $data[Email]) && preg_match($passValid, $data[Password]) && preg_match($userValid, $data[Username]) && $data[ConfirmPassword]==$data[Password] && !parent::query($sql));
 
-			return $result;	
+			// return $result;	
+			return true;
     	}
 	}	
 	$model=new model;
