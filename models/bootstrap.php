@@ -5,7 +5,7 @@
 		protected $ROOT;
 		private $validFile = 'controller/home.php';
 		public $valid;
-		function __construct($ROOT)
+			function __construct($ROOT)
 		{	
 			$this->ROOT=$ROOT;	
 			if(isset($_GET['url'])){ 
