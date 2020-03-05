@@ -4,20 +4,19 @@
 		class database
 		{
 			private $connection;
-			protected function connect($host="localhost", $user="root", $pass="", $dbname="mechayq" )
+			protected function connect($host="localhost", $user="root", $pass="", $dbname="mechayq")
 			{
 				$this->connection = mysqli_connect($host, $user, $pass,$dbname) or die("Service temporary unavailable.");
 				//$db_selected = mysqli_select_db($dbname, $connection) or die("Service temporary unavailable.");
 				mysqli_set_charset($this->connection,"utf8");
-				date_default_timezone_set("A sia/Yerevan");
+				date_default_timezone_set("Asia/Yerevan");
 			}
 			public function query($query)
 			{
-				$conn = $this-> connect();
 				$res = mysqli_query($this->connection, $query);
 				// var_dump($res);
 				while($row = mysqli_fetch_assoc($res))
-					$Data[] =  $row;
+					$Data[] =  $row;//+=
 				$this->close();
 				return $Data;
 			}

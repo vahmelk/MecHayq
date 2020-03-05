@@ -1,5 +1,9 @@
 body{
    height: 100%;
+   background-image:url("../images/section.jpg");
+   background-size: 2000px;
+   background-repeat: no-repeat;
+   
 }
 .logoimg{
    width: auto;
@@ -7,7 +11,8 @@ body{
 }
 nav{
    width: 100%;
-   display: flex !important ;
+   display: flex !important;
+   background-image: linear-gradient(to left, #000080,#0080ff,#0045ff,#0000ff,#000080);
 
 }
 nav .sidenav-trigger {
@@ -19,11 +24,12 @@ nav .sidenav-trigger {
 }
 footer{
     display: block;
+    background-image: linear-gradient(to left, #000080,#0080ff,#0045ff,#0000ff,#000080);
 }
 #hide{
    width: 60px;
-  display: none;
-  color: #ee6e73;
+   display: none;
+   color: #ee6e73;
 }
 .background{
    background-image: url('../images/logoPT.png');
@@ -41,10 +47,11 @@ footer{
    width:53px;
    display: inline-block;
    height:50px;
-   margin-top: 2px;
+   margin-top: 7px;
+   margin-left:20px;
 }
 .mth{
-   background-image: url("../images/download\ \(1\).jfif");
+   background-image: url("../images/math.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover; 
@@ -56,7 +63,7 @@ footer{
    color: #cc231e;
 }
 .mem{
-   background-image: url("../images/download.jfif");
+   background-image: url("../images/memory.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover; 
@@ -81,7 +88,7 @@ footer{
 }
 
 .att{
-   background-image: url("../images/attent.jfif");
+   background-image: url("../images/atention.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover; 
@@ -109,36 +116,58 @@ footer{
    font-size: 33px;
    justify-content: center;
    display: flex;
+   color: white !important;
+   font-family: bold;
 }
 .section{
-   display: flex;
+   display: flex;    
    justify-content: space-around;
+   height:423px !important;
+   /* padding:30px; */
 }
-    #bigpgdiv{
-       width:95%;
-       position: absolute;
-       display: inline-block !important;
-    }
-    .pages{
-       color: black;
-       margin-left: 15%;
-    }
-    .pages:hover{
-       background-color: darkgray;
-    }
-    .pagesn{
-       margin-top: 100px;
-    }
-    .pagesbig{
-       color: #000000;
+#bigpgdiv{
+   width:95%;
+   position: absolute;
+   display: inline-block !important;
+}
+
+.pages{
+   color: grey;
+   padding-left:15px;
+}
+.pages:hover{
+   background-color: darkgray;
+}
+.pagesn{
+   margin-top: 100px;
+      background-color:rgb(3, 79, 104);
+
+}
+.pagesbig{
+   color: #000000;
+   display: inline-block;
+   display: block;
+   float:right;
+   text-align: right;
+    margin-left:5px;
+
+   
+}
+.pgbighome{
        display: inline-block;
-       text-align: right;
-    }
-    .pgbighome{
-       margin-left: 80%;
-       display: inline-block;
-    } 
-      @media only screen and (max-width : 992px) {
+} 
+.header_word{
+      color: white;
+      margin-left:10px;
+      text-align: center;
+      font-size: 15px;
+      
+}
+.header_word:hover{
+      cursor: pointer;
+
+}
+    @media only screen and (max-width : 995px) {
          .logotp{
          margin-top: 2px !important;
          margin: 0 auto;
@@ -146,6 +175,7 @@ footer{
       }
          .gameicon{
             font-size: 25px;
+            
          }
       .pagesbig {
         padding-left: 0;
@@ -156,17 +186,18 @@ footer{
          width: 90%;
       }
     }
-      @media only screen and (min-height: 710px) {
+      @media only screen and (min-height: 1000px) {
         footer{
           position: absolute;
           bottom: 0;
           width: 100%;
         }
+
       }
-      
       .mth , .logic , .mem , .att{
          transition: 0.5s ease;
          filter: blur(0.4);
+
       }
       .mthdiv , .memdiv , .logdiv, .attdiv {
          position: relative;
@@ -193,4 +224,98 @@ footer{
 .attdiv:hover .att , .memdiv:hover .mem , .logdiv:hover .logic , .mthdiv:hover .mth{
    filter: blur(0px);
    transform: scale(1.2);
+}
+/* registration */
+/* .parent{
+   display:flex;
+} */
+.form_regist{
+      background-color:rgb(3, 79, 104);
+      text-align: center;
+      margin: 0 auto; 
+      width:100%;
+      max-width:340px;
+      height:570px;
+      margin-top:5px;
+      margin-bottom:20px;
+      border:2px solid lightblue;
+      justify-content: center;
+      font-size:20px;
+      border-radius:5%;
+      opacity: 0.8;
+ }
+#regist_title{
+   color:white;
+}
+input{
+   color:white;
+  height:20px !important;
+  text-align: center;
+  width:300px !important;
+  line-height:normal !important;
+  margin: 0 !important;
+  border-bottom:1px solid lightseagreen !important;
+}
+label{
+   font-size:20px !important;
+   color:white !important;
+}
+ .radio{
+      position:relative !important;
+      opacity: 1 !important;
+      pointer-events:auto !important;   
+      width:15px !important;
+      margin-top:2px !important;
+}
+#regist_button{
+   
+   background: #0066A2;
+   color: white;
+   border-radius: 20px;
+   border-color: #0066A2;
+   height: 50px;
+   width: 100px;
+   font: bold 15px arial, sans-serif;
+   text-shadow:none;
+}
+.checking{
+   font-size:18px;
+}
+/* login */
+.login_sec{
+   height:450px;
+}
+.login_form{
+   background-color:rgb(3, 79, 104);
+   text-align: center;
+   margin: 0 auto; 
+   width:100%;
+   max-width:350px;
+   height:340px;
+   margin-top:10px;
+   margin-bottom:20px;
+   border:2px solid lightblue;
+   font-size:20px;
+   border-radius:5%;
+   opacity: 0.8;
+}
+#login_title{
+   color:white;
+
+}
+#login_button{
+   background:#6495ED ;
+   color: white;
+   margin-top:30px;
+   border-radius: 20px;
+   border-color: lightblue;
+   height: 50px;
+   width: 100px;
+   font-family: bold 15px arial, sans-serif;
+   /* text-shadow:none; */
+}
+.pass_rule{
+   width:200px;
+   height:20px ;
+   color:white;
 }
