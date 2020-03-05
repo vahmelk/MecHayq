@@ -1,7 +1,7 @@
 body{
    height: 100%;
    background-image:url("../images/section.jpg");
-   background-size: 2000px;
+   background-size: 3000px;
    background-repeat: no-repeat;
    
 }
@@ -130,17 +130,23 @@ footer{
    position: absolute;
    display: inline-block !important;
 }
-
+#slide-out{
+      background-image:url("../images/section.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+}
 .pages{
-   color: grey;
+   color: white;
    padding-left:15px;
 }
 .pages:hover{
-   background-color: darkgray;
+   background-color: #0080ff;
+   cursor: pointer;
 }
 .pagesn{
    margin-top: 100px;
-      background-color:rgb(3, 79, 104);
+
 
 }
 .pagesbig{
@@ -168,6 +174,7 @@ footer{
 
 }
     @media only screen and (max-width : 995px) {
+     
          .logotp{
          margin-top: 2px !important;
          margin: 0 auto;
@@ -185,6 +192,7 @@ footer{
          display: inline-block;
          width: 90%;
       }
+       
     }
       @media only screen and (min-height: 1000px) {
         footer{
@@ -192,6 +200,12 @@ footer{
           bottom: 0;
           width: 100%;
         }
+          .login_form{
+          margin-top:150px !important;
+       }
+       .form_regist{
+          margin-top:60px !important;
+       }
 
       }
       .mth , .logic , .mem , .att{
@@ -234,8 +248,8 @@ footer{
       text-align: center;
       margin: 0 auto; 
       width:100%;
-      max-width:340px;
-      height:570px;
+      max-width:300px;
+      height:620px;
       margin-top:5px;
       margin-bottom:20px;
       border:2px solid lightblue;
@@ -251,7 +265,7 @@ input{
    color:white;
   height:20px !important;
   text-align: center;
-  width:300px !important;
+  width:270px !important;
   line-height:normal !important;
   margin: 0 !important;
   border-bottom:1px solid lightseagreen !important;
@@ -280,10 +294,11 @@ label{
 }
 .checking{
    font-size:18px;
+   color:white;
 }
 /* login */
 .login_sec{
-   height:450px;
+   height:440px;
 }
 .login_form{
    background-color:rgb(3, 79, 104);
@@ -291,7 +306,8 @@ label{
    margin: 0 auto; 
    width:100%;
    max-width:350px;
-   height:340px;
+   height: 100%;
+   max-height:360px;
    margin-top:10px;
    margin-bottom:20px;
    border:2px solid lightblue;
@@ -306,7 +322,7 @@ label{
 #login_button{
    background:#6495ED ;
    color: white;
-   margin-top:30px;
+   margin-top:5px;
    border-radius: 20px;
    border-color: lightblue;
    height: 50px;
