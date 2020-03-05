@@ -1,6 +1,9 @@
 <?php
 class login extends model{ 
-
+    function __construct(){ 
+       parent::checkuser(2);
+    //    parent::checkuserlogin(2);
+    }
     function render(){
          require_once "./view/layout/header.php";
         require_once "./view/content/login.php";

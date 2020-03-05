@@ -2,9 +2,8 @@
 class home  extends model{
     
     function __construct(){ 
-      if(!isset($_COOKIE["u_id"])){
-        header("LOCATION: ".$ROOT."login");
-      }
+       parent::checkuser(1);
+      //  parent::checkuserlogin(1);
     }
     function render(){
       require_once "view/layout/header.php";
