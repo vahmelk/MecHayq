@@ -10,6 +10,7 @@ class home extends model{
       parent::checkuser("home");
     }
     function render(){
+      $switcher="home";
       require_once "view/layout/header.php";
       require_once "view/content/menu.php";
       require_once "view/layout/footer.php";

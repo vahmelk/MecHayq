@@ -1,6 +1,12 @@
 <?php
 class registration {
+    public function __construct(){
+        var_dump($_POST);
+        $this->render();
+
+    }
     public function render(){
+        $switcher="registration";
         require_once "./view/layout/header.php";
         require_once "./view/content/registration.php";
         require_once "./view/layout/footer.php";
@@ -12,7 +18,6 @@ class registration {
 
 }
 $regist=new registration;
-$regist->render();
 // $regist->regist();
 
 

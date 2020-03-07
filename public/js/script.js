@@ -1,53 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-	var elems = document.querySelectorAll('.sidenav');
-	var instances = M.Sidenav.init(elems);
+	let elems = document.querySelectorAll('.sidenav');
+  let instances = M.Sidenav.init(elems);
 });
-if (getCookie("u_id")) {
-  home.addEventListener("click", function() {
-    window.location.href = "home";
-  });
-  home_page.addEventListener("click", function() {
-    window.location.href = "home";
-  });
-  sign_out.addEventListener("click", function() {
-    delete_cookie("u_id");
-    location.reload();
-  });
-  signout_page.addEventListener("click", function() {
-    delete_cookie("u_id");
-    location.reload();
-  });
-} else {
-  sign_up.addEventListener("click", function() {
-    window.location.href = "registration";
-    regist_button.addEventListener("click", function() {
-      let obj = {
-        name: name.value,
-        age: age.value,
-        username: username.value,
-        email: email.value,
-        password: password.value
-      };
-      JSON.stringify(obj);
-    });
-  });
-  signup_page.addEventListener("click", function() {
-    window.location.href = "registration";
-  });
-  sign_in.addEventListener("click", function() {
-    window.location.href = "login";
-    login_button.addEventListener("click", function() {
-      let obj = {
-        username: username.value,
-        password: password.value
-      };
-      JSON.stringify(obj);
-    });
-  });
-  signin_page.addEventListener("click", function() {
-    window.location.href = "login";
-  });
-}
+
+  
+
 
 
 
@@ -96,7 +53,7 @@ function checkCookie() {
 	}
 }
 function delete_cookie(name) {
-	document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
 }
 
 

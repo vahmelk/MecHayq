@@ -19,11 +19,12 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <a class="grey-text text-lighten-4 right" href="#!"><?=$switcher?></a>
             </div>
           </div>
         </footer>
   <script src="./public/js/script.js?v=<?=rand()?>"></script>
+  <script src="./public/js/<?=$switcher?>.js"></script>
   <script type="text/javascript" src="./public/js/materialize.min.js?v=<?=rand()?>"></script>
 </body>
 </html>

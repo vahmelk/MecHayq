@@ -3,31 +3,31 @@
       
 
           
-           <form action="" class="form_regist">
+           <form action="./controller/registration.php" method="POST" class="form_regist">
              <h4 id="regist_title">Registration</h4>
              <div class="name">
                  <label for="name" class="regist_label">Name</label>
-                <input type="text" id="name">
+                <input type="text" id="name" name="name">
              </div>
              <div class="age">
                <label for="age" class="regist_label">Age</label>
-               <input type="number" min="3" max="100" id="age">
+               <input type="number" min="3" max="100" id="age" name="age">
              </div>
                <div class="username">
                    <label for="username" class="regist_label">Username</label>
-                <input type="text" id="username">
+                <input type="text" id="username" name="username">
                </div>
                <div class="email">
                  <label for="email" class="regist_label">Email</label>
-                 <input type="text" id="email">
+                 <input type="text" id="email" name="email">
               </div>
               <div class="password">
                    <label for="password"  class="regist_label">Password</label>
-                    <input type="text" id="password">
+                    <input type="password" id="password" name="password" >
               </div>
                <div class="confirm_password">
-                    <label for="confirm_pass" class="regist_label">Confirmpassword</label>
-                    <input type="text" id="confirm_pass">
+                    <label for="confirm_pass" class="regist_label">Confirm Password</label>
+                    <input type="password" id="confirm_pass" >
                </div>
               
                 <div class="gender">
@@ -38,7 +38,7 @@
                 </div>
               
                <p class="checking">Already have an account?<span id="log">log in</span ></p>
-                <button id="regist_button">submit</button>
+                <input type="submit" id="regist_button" value="submit">
             </form>
     
            
