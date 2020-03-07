@@ -47,8 +47,9 @@ footer{
    width:53px;
    display: inline-block;
    height:50px;
+   padding: 5px;
    margin-top: 7px;
-   margin-left:20px;
+   margin-left: 5px;
 }
 .mth{
    background-image: url("../images/math.jpg");
@@ -176,7 +177,7 @@ footer{
     @media only screen and (max-width : 995px) {
      
          .logotp{
-         margin-top: 2px !important;
+         margin-top: 5px !important;
          margin: 0 auto;
          display: block;
       }

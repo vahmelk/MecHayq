@@ -23,7 +23,7 @@
             </div>
           </div>
         </footer>
-  <script src="../../public/js/script.js?v=<?=rand()?>"></script>
-  <script type="text/javascript" src="../../public/js/materialize.min.js?v=<?=rand()?>"></script>
+  <script src="./public/js/script.js?v=<?=rand()?>"></script>
+  <script type="text/javascript" src="./public/js/materialize.min.js?v=<?=rand()?>"></script>
 </body>
 </html>
