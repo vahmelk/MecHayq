@@ -26,23 +26,22 @@
   }
   
 
+/* if($a==50  && ($b==60 || $b==100)){
+  
+}*/
 
-	public function checkuser($a){ 
-			$sql="SELECT * FROM mechayq_dp WHERE u_id=$_COOKIE[u_id]";
-      	if (parent::query($sql) && $a==2) {
-    	      header("LOCATION: ".$ROOT."login");
-     		}else{
-				    header("LOCATION: ".$ROOT);
+	public function checkuser($from){ 
+    
+      $sql="SELECT * FROM mechayq_dp WHERE u_id=$_COOKIE[u_id]";
+      	if ($from=="home" && (!isset($_COOKIE['u_id']) || (isset($_COOKIE['u_id']) && !parent::query($sql)))) {
+            header("LOCATION:/login");
+     		}elseif($from=="login" && isset($_COOKIE['u_id']) && parent::query($sql)){
+           echo "sadfhavs";
+            header("LOCATION:/");
+            
 			  }
   }
-  // public function checkuserlogin($b){ 
-	// 		$sql="SELECT * FROM mechayq_dp WHERE u_id=$_COOKIE[u_id]";
-  //     	if (parent::query($sql) && $b==1) {
-  //   	      header("LOCATION: ".$ROOT."login");
-  //    		}else{
-	// 			    header("LOCATION: ".$ROOT);
-	// 		  }
-	// }
+ 
 	
   public function validation($data){
    $passValid="/#.*^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$#/";

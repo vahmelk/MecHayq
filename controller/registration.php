@@ -32,12 +32,4 @@ $regist->render();
 //         parent::setUser($data);
 //     }
 
-<<<<<<< HEAD
-// }
-// $regist=new registration;
-// $regist->render();
-// $regist->regist();
-
-=======
->>>>>>> f32cd7a30d4762be3f9c8f95a2cc9d0305b86a30
 ?>

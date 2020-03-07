@@ -6,9 +6,8 @@ class home extends model{
       // echo isset($_COOKIE["u_id"]);
       if(!isset($_COOKIE["u_id"])){
         header("LOCATION: ".$ROOT."login");
-      }elseif($_COOKIE["u_id"] == ""){
-        header("LOCATION: ".$ROOT."login");
       }
+      parent::checkuser("home");
     }
     function render(){
       require_once "view/layout/header.php";

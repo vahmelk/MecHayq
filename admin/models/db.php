@@ -14,6 +14,7 @@
 			
 			public function query($query)
 			{
+				$this->connect();
 				$res = mysqli_query($this->connection, $query);
 				// var_dump($res);
 				while($row = mysqli_fetch_assoc($res))
