@@ -11,6 +11,7 @@
 				mysqli_set_charset($this->connection,"utf8");
 				date_default_timezone_set("Asia/Yerevan");
 			}
+			
 			public function query($query)
 			{
 				$res = mysqli_query($this->connection, $query);
@@ -40,3 +41,19 @@
 
 
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
