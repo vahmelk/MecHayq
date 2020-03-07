@@ -6,7 +6,18 @@
 	* 
 	*/
 	class model extends database{
-		
+		 public function checkuser($a){ 
+    echo "ashxatuma 1";
+      $sql="SELECT * FROM mechayq_dp WHERE u_id=$_COOKIE[u_id]";
+        if (parent::query($sql) && $a==2) {
+          echo "if 1";
+            header("LOCATION: ".$ROOT."login");
+
+         }else{
+           echo "else 1";
+            header("LOCATION: ".$ROOT);
+        }
+  }
 		function __construct()
 		{
 			// $this-> $x;
