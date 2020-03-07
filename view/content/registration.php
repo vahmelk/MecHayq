@@ -1,6 +1,6 @@
 
     <section >
-      <p class="checking">Already have an account?<span id="log">log in</span ></p>
+      
 
           
            <form action="" class="form_regist">
@@ -37,7 +37,7 @@
                 <input type="radio" name="gender" class="radio " value="Female"  id="female">
                 </div>
               
-               
+               <p class="checking">Already have an account?<span id="log">log in</span ></p>
                 <button id="regist_button">submit</button>
             </form>
     
