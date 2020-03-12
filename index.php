@@ -9,8 +9,7 @@
 	
 	$app = new bootstrap($ROOT);
 	
-	// if(!$app->valid){
-
-	// }
 	
 ?>
+
+

@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>ERROR 404</h1>
-    <a href="/">Go to home</a>
-</body>
-</html>
+
+    <section class="error_sec">
+         <h3>Sorry, this page isn't available.</h3> 
+         <p class="error">The link you followed may be broken, or the page may have been removed.</p>
+             <p class="error">So <a href="/" id="go_home">Go to home</a></p>
+         
+       
+    </section>
+   

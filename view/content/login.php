@@ -13,7 +13,7 @@
         </div>
        <div>
            <p class="checking">Not yet registered? <span id="regster">register now</span></p>
-            <button id="login_button">log in</button>
+            <button type="submit" id="login_button">log in</button>
         </div>
     
 

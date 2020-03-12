@@ -23,7 +23,7 @@ nav .sidenav-trigger {
     margin: 0 18px;
 }
 footer{
-    display: block;
+    display: fixed;
     background-image: linear-gradient(to left, #000080,#0080ff,#0045ff,#0000ff,#000080);
 }
 #hide{
@@ -240,6 +240,10 @@ footer{
    filter: blur(0px);
    transform: scale(1.2);
 }
+.icon{
+   font-size:35px;
+   padding:2px;
+}
 /* registration */
 /* .parent{
    display:flex;
@@ -283,13 +287,12 @@ label{
       margin-top:2px !important;
 }
 #regist_button{
-   
    background: #0066A2;
    color: white;
    border-radius: 20px;
    border-color: #0066A2;
-   height: 50px;
-   width: 100px;
+   height: 50px !important;
+   width: 100px !important;
    font: bold 15px arial, sans-serif;
    text-shadow:none;
 }
@@ -335,4 +338,25 @@ label{
    width:200px;
    height:20px ;
    color:white;
+}
+/* error*/
+.error_sec{
+   height:440px;
+   text-align:center;
+   color:white;
+}
+.error{
+   font-size:20px;
+}
+#go_home{
+   color:grey;
+}
+#facebook:hover{
+   color:#10ecb9;
+}
+#gmail:hover{
+   color:red;
+}
+#website:hover{
+   color:#10ecb9;
 }
