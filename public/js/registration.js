@@ -29,6 +29,7 @@ signin_page.addEventListener("click", function() {
       "for":"registration"
     },
      success:function(res){
+       console.log(res);
        let xhttp = new XMLHttpRequest();
        xhttp.onreadystatechange = function () {
          if (this.readyState == 4 && this.status == 200) {
@@ -44,7 +45,6 @@ signin_page.addEventListener("click", function() {
            }
          }
        }
-     
      }
     });
    

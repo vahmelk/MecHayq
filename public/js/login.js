@@ -6,12 +6,20 @@ signup_page.addEventListener("click", function () {
   window.location.href = "registration";
 });
   login_button.addEventListener("click", function() {
-    
     event.preventDefault();
-    let obj = {
+    let obj={};
+    if (username.value=="@") {
+        let obj={
+          email: username.value,
+          password: password.value
+        }
+    }
+    else {
+      let obj = {
       username: username.value,
       password: password.value
-    };
+      }
+    }
     let request=JSON.stringify(obj);
     $.ajax({
       url: "./controller/request.php",
