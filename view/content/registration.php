@@ -34,7 +34,7 @@
                     <label  for="male">Male</label>
                     <input type="radio" name="gender" class="radio" value="Male" id="male" checked >
                      <label  for="female">Female</label>
-                <input type="radio" name="gender" class="radio " value="Female"  id="female">
+                    <input type="radio" name="gender" class="radio " value="Female"  id="female">
                 </div>
               
                <p class="checking">Already have an account?<span id="log">log in</span ></p>
