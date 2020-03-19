@@ -8,6 +8,7 @@ class registration extends model{
     }
     public function render(){
         $switcher="registration";
+        $css="registration";
         require_once "./view/layout/header.php";
         require_once "./view/content/registration.php";
         require_once "./view/layout/footer.php";

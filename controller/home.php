@@ -11,6 +11,7 @@ class home extends model{
     }
     function render(){
       $switcher="home";
+      $css="home";
       require_once "view/layout/header.php";
       require_once "view/content/menu.php";
       require_once "view/layout/footer.php";
