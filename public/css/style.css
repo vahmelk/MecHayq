@@ -1,10 +1,11 @@
 body{
    height: 100%;
    background-image:url("../images/section.jpg");
-   background-size: 3000px;
+   background-size: cover;
    background-repeat: no-repeat;
    
 }
+
 .logoimg{
    width: auto;
    height: 100%;
@@ -13,7 +14,6 @@ nav{
    width: 100%;
    display: flex !important;
    background-image: linear-gradient(to left, #000080,#0080ff,#0045ff,#0000ff,#000080);
-
 }
 nav .sidenav-trigger {
     float: left;
@@ -22,10 +22,7 @@ nav .sidenav-trigger {
     height: 56px;
     margin: 0 18px;
 }
-footer{
-    display: fixed;
-    background-image: linear-gradient(to left, #000080,#0080ff,#0045ff,#0000ff,#000080);
-}
+
 #hide{
    width: 60px;
    display: none;
@@ -121,10 +118,11 @@ footer{
    font-family: bold;
 }
 .section{
-   display: flex;    
-   justify-content: space-around;
-   height:423px !important;
-   /* padding:30px; */
+   /* display: flex;     */
+   /* justify-content: space-around; */
+   position: relative;
+    height:630px !important;
+    padding:30px; 
 }
 #bigpgdiv{
    width:95%;
@@ -174,8 +172,16 @@ footer{
       cursor: pointer;
 
 }
-    @media only screen and (max-width : 995px) {
-     
+
+    @media only screen and (max-width : 995px) {   
+         .section{
+            height:400px !important;
+         }
+         .page-footer{
+            position: relative;
+            /* top:100px; */
+            height:500px !important;
+        } 
          .logotp{
          margin-top: 5px !important;
          margin: 0 auto;
@@ -193,21 +199,24 @@ footer{
          display: inline-block;
          width: 90%;
       }
-       
-    }
-      @media only screen and (min-height: 1000px) {
-        footer{
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-        }
-          .login_form{
-          margin-top:150px !important;
-       }
-       .form_regist{
+      
+      
+   }
+
+      @media only screen and (min-width: 992px) {
+          /* .form_regist{
+          margin-top:100px !important;
+       } */
+         .login_form{
           margin-top:60px !important;
        }
-
+        .section{
+         height:1100px !important;
+       } 
+       /* footer{
+          top:100px;
+       } */
+      
       }
       .mth , .logic , .mem , .att{
          transition: 0.5s ease;
@@ -248,6 +257,9 @@ footer{
 /* .parent{
    display:flex;
 } */
+.reg_sec{
+   height:930px !important;
+}
 .form_regist{
       background-color:rgb(3, 79, 104);
       text-align: center;
@@ -255,8 +267,8 @@ footer{
       width:100%;
       max-width:300px;
       height:620px;
-      margin-top:5px;
-      margin-bottom:20px;
+      margin-top:7px;
+      /* margin-bottom:100px; */
       border:2px solid lightblue;
       justify-content: center;
       font-size:20px;
@@ -269,7 +281,7 @@ footer{
 input{
    color:white;
   height:20px !important;
-  text-align: center;
+  /* text-align: center; */
   width:270px !important;
   line-height:normal !important;
   margin: 0 !important;
@@ -302,7 +314,7 @@ label{
 }
 /* login */
 .login_sec{
-   height:440px;
+   height:600px;
 }
 .login_form{
    background-color:rgb(3, 79, 104);
@@ -351,6 +363,16 @@ label{
 #go_home{
    color:grey;
 }
+/* footer */
+
+footer{
+    background-image: linear-gradient(to left, #000080,#0080ff,#0045ff,#0000ff,#000080) !important;
+   position: fixed;
+   left:0;
+   bottom:0;
+    width: 100% !important;
+    height: 250px;
+}
 #facebook:hover{
    color:#10ecb9;
 }
@@ -359,4 +381,21 @@ label{
 }
 #website:hover{
    color:#10ecb9;
+}
+#comment{
+   max-height: 100px;
+   min-height: 30px;
+   color:white;
+   max-width:365px !important;
+}
+#send{
+   background:#6495ED ;
+   color: white;
+   margin-top:5px;
+   border-radius: 10px;
+   border-color: lightblue;
+   height: 40px;
+   width: 80px;
+   font-family: bold 15px arial, sans-serif;
+   font-size:20px;
 }

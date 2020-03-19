@@ -5,6 +5,7 @@ class login extends model{
     }
     function render(){
         $switcher="login";
+        $css="login";
          require_once "./view/layout/header.php";
         require_once "./view/content/login.php";
         require_once "./view/layout/footer.php";
