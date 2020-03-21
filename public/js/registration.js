@@ -19,24 +19,24 @@ signin_page.addEventListener("click", function() {
       password: password.value,
       gender:document.getElementById(document.getElementById('male').checked ? "male" : "female").value
     };
-    const request=JSON.stringify(obj);
+    // const request=JSON.stringify(obj);
     $.ajax({
     url:"./controller/request.php",
-    method:"POST",
-    data:request,
+    method:"Get",
+    data:obj,
     headers:{
       'Content-Type': 'application/json',
       "for":"registration"
     },
      success:function(res){
-       console.log(res);
        let xhttp = new XMLHttpRequest();
        xhttp.onreadystatechange = function () {
          if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);
-            let row = JSON.parse(res);
-            if (row) {
-             setcookie("u_id", now, 30);
+           console.log(this.responseText);
+           let row = JSON.parse(res);
+            if (res) {
+            console.log(res);
+            setcookie("u_id", now, 30);
            }
            else {
               username.style.border="red";

@@ -34,7 +34,6 @@
    filter: blur(0px);
    color:#353341;
 }
-
 .att{
    background-image: url("../images/atention.jpg");
    background-repeat: no-repeat;
@@ -68,26 +67,23 @@
    font-family: bold;
 }
 .section{
-   display: flex;    
-   justify-content: space-around;
-   height:423px !important;
-   /* padding:30px; */
+   
+   padding:30px; 
 }
- .mth , .logic , .mem , .att{
-         transition: 0.5s ease;
-         filter: blur(0.4);
-
-      }
-      .mthdiv , .memdiv , .logdiv, .attdiv {
-         position: relative;
-         width: 100%;
-         margin-top: 10px;
-         height: 171px;
-         border: 2px solid #000000;
-         border-radius: 15px;
-         overflow: hidden;
-         cursor: pointer;
-     }
+.mth , .logic , .mem , .att{
+   transition: 0.5s ease;
+   filter: blur(0.4);
+}
+.mthdiv , .memdiv , .logdiv, .attdiv {
+      position: relative;
+      width: 100%;
+      margin-top: 10px;
+      height: 171px;
+      border: 2px solid #000000;
+      border-radius: 15px;
+      overflow: hidden;
+      cursor: pointer;
+}
   #attent ,#memor ,  #logic , #math{
       height: 100%;
       z-index: 1;
@@ -99,8 +95,14 @@
       background-color: rgba(0,0,0,.3);
       border-radius: 15px;
   }
-
-.attdiv:hover .att , .memdiv:hover .mem , .logdiv:hover .logic , .mthdiv:hover .mth{
+  .attdiv:hover .att , .memdiv:hover .mem , .logdiv:hover .logic , .mthdiv:hover .mth{
    filter: blur(0px);
    transform: scale(1.2);
 }
+@media only screen and (max-width : 995px) { 
+     
+      .gameicon{
+         font-size: 25px;
+            
+      }
+   }
