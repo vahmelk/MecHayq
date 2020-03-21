@@ -11,9 +11,20 @@ class request extends model{
         $sql="SELECT * FROM mechayq_dp WHERE (Username='$request[Username]' OR Email='$request[email]') AND Password='$request[Password]'";
         echo (parent::query($sql))?"ok":"fail";
     }
+     public function registration()
+    { 
+      echo "ok";
+    //   $_GET(request);
+    //   parent::setUser();
+    }
+    
 }
-          
-    var_dump(getallheaders()["for"]);
 $request=new request;
+    if(getallheaders()["for"] == "registration"){
+       $request->registration();
+    }elseif(getallheaders()["for"] == "login"){
+        $request->login();
+    }
+
 var_dump($_GET);
 ?>
