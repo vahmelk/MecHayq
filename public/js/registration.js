@@ -12,14 +12,15 @@ signin_page.addEventListener("click", function() {
     console.log(now);
     const obj = {
       u_id:now,
-      name: name.value,
+      name: user.value,
       age: age.value,
       username: username.value,
       email: email.value,
       password: password.value,
       gender:document.getElementById(document.getElementById('male').checked ? "male" : "female").value
     };
-    // const request=JSON.stringify(obj);
+    
+    // console.log(obj);
     $.ajax({
     url:"./controller/request.php",
     method:"Get",
@@ -29,23 +30,28 @@ signin_page.addEventListener("click", function() {
       "for":"registration"
     },
      success:function(res){
-       let xhttp = new XMLHttpRequest();
-       xhttp.onreadystatechange = function () {
-         if (this.readyState == 4 && this.status == 200) {
-           console.log(this.responseText);
-           let row = JSON.parse(res);
-            if (res) {
-            console.log(res);
-            setcookie("u_id", now, 30);
+      //  let xhttp = new XMLHttpRequest();
+      //  xhttp.onreadystatechange = function () {
+      //    if (this.readyState == 4 && this.status == 200) {
+      //      console.log(this.responseText);
+      //      let row = JSON.parse(res);
+
+      //       if (row) {
+      //       console.log(row);
+      //       setcookie("u_id", now, 30);
+      //      }
+      //      
+      //    }
+      //  }
+        if (!res.includes("fail")) {
+          setCookie("u_id", now, 30);
+          window.location.reload();
+      }
+      else {
+              error_msg.style.display="block";
            }
-           else {
-              username.style.border="red";
-              email.style.border="red";
-              password.style.border="red";
-           }
-         }
-       }
-     }
+     
+          }
     });
    
   });

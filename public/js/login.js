@@ -36,14 +36,18 @@ login_button.addEventListener("click", function() {
         "for": "login"
       },
       success: function (res) {
-        // if(res){
-          console.log(res);
-        // }else{
-        //   username.style.border="red";
-        //   password.style.border="red";
-        // }
-          
-        }
+        let respons=res.split('"');
+        console.log( res);
+        if(!res.includes("fail")){
+          console.log(respons);
+          setCookie("u_id", respons[1],30);
+          window.location.reload();
+        }else{
+         
+          console.log(username.style);
+          error_msg.style.display="block";
+    }
+      }
     });
   });
 

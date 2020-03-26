@@ -24,8 +24,10 @@
 			}
 			protected function query_($query)
 			{
-				$this-> connect();
+				
+				 $this-> connect();
 				$res=mysqli_query($this->connection,$query);
+				
 				$this->close();
 			}
 

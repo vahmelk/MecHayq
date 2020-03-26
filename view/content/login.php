@@ -12,6 +12,7 @@
             <input type="password" id="password" title="The string must contain at least 1 lowercase,uppercase alphabetical and  numeric character, must be eight characters or longer" value="Elen.1234" >  
         </div>
        <div>
+       <p id="error_msg">Username,email or password is invalid</p>
            <p class="checking">Not yet registered? <span id="regster">register now</span></p>
             <button type="submit" id="login_button">log in</button>
         </div>

@@ -6,8 +6,8 @@
            <form action="./controller/registration.php" method="POST" class="form_regist">
              <h4 id="regist_title">Registration</h4>
              <div class="name">
-                 <label for="name" class="regist_label">Name</label>
-                <input type="text" id="name" name="name">
+                 <label for="user" class="regist_label">Name</label>
+                <input type="text" id="user" name="name">
              </div>
              <div class="age">
                <label for="age" class="regist_label">Age</label>
@@ -36,7 +36,7 @@
                      <label  for="female">Female</label>
                     <input type="radio" name="gender" class="radio " value="Female"  id="female">
                 </div>
-              
+              <p id="error_msg">Please fill inputs correctly</p> 
                <p class="checking">Already have an account?<span id="log">log in</span ></p>
                 <input type="submit" id="regist_button" value="submit">
             </form>

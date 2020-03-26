@@ -165,3 +165,8 @@ footer{
    font-family: bold 15px arial, sans-serif;
    font-size:20px;
 }
+#error_msg{
+   display:none;
+   color:red;
+   font-size:15px;
+}
